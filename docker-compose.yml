@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    back:
+        build:
+            context: .
+            dockerfile: dockerfile
+        command: nodemon app.js
+        volumes:
+            - ./first:/project
+        ports:
+            - "8000:8000"
