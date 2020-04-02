@@ -2,5 +2,5 @@ FROM node
 
 ENV WEBAPP_DIR=/project
 
-RUN mkdir $WEBAPP_DIR && npm install -g nodemon
+RUN mkdir $WEBAPP_DIR
 WORKDIR $WEBAPP_DIR
